@@ -1,0 +1,20 @@
+[
+  {
+    "role": "Software Engineer",
+    "organisation": "Digival Solutions",
+    "startDate": "Sep 26, 2022",
+    "endDate": "Present",
+    "experiences": [
+      "Managed 4 modules in DigiClass And Digischeduler Products in Digival Solutions modules Named  : (Announcement , Chat , User Globle Search , Course Scheduling  ) ",
+
+      "Announcement : Announcement is a project designed to disseminate important information to students, including holidays, exams, leaves, and events. I implemented thorough validation processes to determine the appropriate audience for each announcement, whether at the institution level, program level, course level, or exclusively for parents or everyone who has access.",
+
+      "Chat  : I successfully designed and implemented As per given Figma chat module, enhancing real-time communication capabilities for users. Leveraging MongoDB for efficient data storage, Express.js for creating seamless APIs, React.js for dynamic and responsive user interfaces, and Node.js for scalable server-side processing, I ensured a smooth and interactive chat experience. My work included integrating WebSocket protocols for real-time message delivery, ensuring data security with end-to-end encryption, and optimizing the module for performance and scalability. This project significantly improved user engagement and demonstrated my ability to deliver complex.",
+
+      "User Global Search : the User Global Search module. This module enhances user experience by providing a streamlined interface for searching user details based on specific criteria. Users can select the Academic Year, User Type (staff or student), and Choose User, followed by clicking the search button to retrieve detailed information from the API. My role involved designing and developing these interactive components, ensuring seamless integration with the backend services, and optimizing performance for a smooth and efficient user experience.",
+
+      "Course Scheduling :  the Course Scheduling module for students. This feature involves a seamless user interface where users can input crucial details such as date, time, course group, subject, and mode (onsite or remote). Additionally, it includes options for selecting the infrastructure for the location and choosing the appropriate staff. Upon providing these inputs, users can click to schedule their courses, and the system sends all the data to the backend API for processing. My role involved ensuring a smooth flow of data between the frontend and backend, guaranteeing that the scheduling process is efficient and user-friendly."
+    ],
+    "imageSrc": "history/DigiLogo.png"
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "material-ui",
+    "imageSrc": "skills/materialui.svg"
+  },
+  {
+    "title": "Redux",
+    "imageSrc": "skills/redux.svg"
+  },
+  {
+    "title": "Node",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "MongoDB",
+    "imageSrc": "skills/mongodb.png"
+  },
+  {
+    "title": "express",
+    "imageSrc": "skills/express.png"
+  },
+  {
+    "title": "Bootstrap",
+    "imageSrc": "skills/bootstrap.png"
+  },
+  {
+    "title": "gitlab",
+    "imageSrc": "skills/gitlab.svg"
+  },
+  {
+    "title": "Immutable.js",
+    "imageSrc": "skills/immutable.svg"
+  },
+  {
+    "title": "Responsive Design",
+    "imageSrc": "skills/responsivedesign.png"
+  },
+  {
+    "title": "sass",
+    "imageSrc": "skills/scss.svg"
+  }
+]
