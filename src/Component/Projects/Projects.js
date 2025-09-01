@@ -32,15 +32,21 @@ export const Projects = () => {
                       className={styles.ExperienceIcon}
                     />
                   </div>
-                  <ul>
-                    {historyItem.experiences.map((experience, id) => {
-                      return (
-                        <li key={id} className={styles.experiencesUi}>
-                          {experience}
-                        </li>
-                      );
-                    })}
-                  </ul>
+
+                  {/* Experiences inside each role */}
+                  {historyItem.experiences.map((exp, idx) => (
+                    <div key={idx} className={styles.experienceBlock}>
+                      <h4>{`${exp.title} | ${exp.organisation}`}</h4>
+                      <p>{`${exp.startDate} - ${exp.endDate}`}</p>
+                      <ul>
+                        {exp.description.map((desc, i) => (
+                          <li key={i} className={styles.experiencesUi}>
+                            {desc}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
                 </div>
               </div>
             );

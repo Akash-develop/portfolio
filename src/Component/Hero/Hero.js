@@ -8,13 +8,7 @@ export const Hero = () => {
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Akash</h1>
         <p className={styles.description}>
-          2 years experienced Knowledgeable and skilled software development
-          professional offering advanced abilities in wide range of programming
-          languages. Quickly understands requirements for new systems and writes
-          clean and reusable code. Familiar with testing, debugging and
-          correcting problems found in existing software systems, complex
-          project management & coordination work very efficiently to deliver
-          results.
+         Experienced React and Full-Stack Developer with 3.5+ years of combined technical experience. Developed scalable features using JavaScript (ES6+), React.js, Redux, and RESTful APIs, improving application performance by 30% and reducing database query execution time by 40%. Strong analytical background from CAD design experience, enabling innovative solutions for complex web applications and responsive UI development.
         </p>
         <a href="mailto:myemail@email.com" className={styles.contactBtn}>
           Contact Me
