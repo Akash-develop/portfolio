@@ -19,6 +19,16 @@
         ]
       },
       {
+        "title": "Software Development Intern",
+        "organisation": "DigiVal IT Solutions",
+        "startDate": "Sep 2022",
+        "endDate": "Dec 2022",
+        "description": [
+          "Developed middleware solutions for API validation and security ensuring system reliability",
+          "Gained understanding of distributed systems architecture and GitLab workflow implementation"
+        ]
+      },
+      {
         "title": "CAD Designer",
         "organisation": "Ayyapa Enterprises",
         "startDate": "Apr 2020",
@@ -27,16 +37,6 @@
           "Designed technical drawings using CAD software with precision and industry standards",
           "Collaborated with engineering teams on design specifications and technical documentation",
           "Applied analytical problem-solving skills that enhanced logical thinking for software development"
-        ]
-      },
-      {
-        "title": "Software Development Intern",
-        "organisation": "DigiVal IT Solutions",
-        "startDate": "Sep 2022",
-        "endDate": "Dec 2022",
-        "description": [
-          "Developed middleware solutions for API validation and security ensuring system reliability",
-          "Gained understanding of distributed systems architecture and GitLab workflow implementation"
         ]
       }
     ],
