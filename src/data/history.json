@@ -1,45 +1,32 @@
 [
   {
-    "role": "Software Engineer",
-    "organisation": "Digival Solutions",
-    "startDate": "Sep 26, 2022",
+    "role": "Associate Analyst - Software Development",
+    "organisation": "Digival IT Solutions",
+    "startDate": "Sep 2022",
     "endDate": "Present",
-    "experiences": [
+    "imageSrc": "history/DigiLogo.png",
+    "projects": [
       {
-        "title": "Software Developer",
-        "organisation": "DigiVal IT Solutions",
-        "startDate": "Dec 2022",
-        "endDate": "Present",
+        "title": "Digi Scanner",
+        "subtitle": "React Exam-Scanning App",
         "description": [
-          "Optimized React.js applications using Redux and Context API, improving responsiveness by 30%",
-          "Developed efficient RESTful APIs reducing response time by 30% and handling 50% more users",
-          "Architected MongoDB schemas with Redis caching, decreasing query execution time by 40%",
-          "Implemented Unit Testing with Jest, increasing coverage by 50% and reducing bugs by 15%",
-          "Collaborated with Agile teams using GitLab workflows for financial services applications"
+          "Built the full student and staff scan flow in React, Vite, and Redux Toolkit (capture to submit).",
+          "Ran OpenCV document detection in a Web Worker so the camera UI stays smooth.",
+          "Added face login and MediaPipe liveness checks (hand pose and head-yaw).",
+          "Stored scanned booklets in IndexedDB with iOS-safe, per-student persistence.",
+          "Submitted pages via signed URLs with retry/resume, token refresh, and Docker deploy."
         ]
       },
       {
-        "title": "Software Development Intern",
-        "organisation": "DigiVal IT Solutions",
-        "startDate": "Sep 2022",
-        "endDate": "Dec 2022",
+        "title": "Digi Assess",
+        "subtitle": "Scan-Based Manual Evaluation",
         "description": [
-          "Developed middleware solutions for API validation and security ensuring system reliability",
-          "Gained understanding of distributed systems architecture and GitLab workflow implementation"
-        ]
-      },
-      {
-        "title": "CAD Designer",
-        "organisation": "Ayyapa Enterprises",
-        "startDate": "Apr 2020",
-        "endDate": "Aug 2022",
-        "description": [
-          "Designed technical drawings using CAD software with precision and industry standards",
-          "Collaborated with engineering teams on design specifications and technical documentation",
-          "Applied analytical problem-solving skills that enhanced logical thinking for software development"
+          "Built evaluation flows so graders mark scanned answer booklets student-by-student.",
+          "Developed student list UI with search, pagination, and status filters.",
+          "Implemented booklet evaluation with mark entry, annotations, and unsaved-change handling.",
+          "Integrated APIs for questions, marks import, evaluation config, and activity history."
         ]
       }
-    ],
-    "imageSrc": "history/DigiLogo.png"
+    ]
   }
 ]

@@ -1,40 +1,44 @@
 import React from "react";
-
 import styles from "./Contact.module.css";
+import { getImageUrl } from "../utils";
 
-const getImageUrl = (imageSrc) => {
-  try {
-    return require(`../../assets/${imageSrc}`);
-  } catch (error) {
-    return ""; // Fallback in case of an error
-  }
-};
 export const Contact = () => {
   return (
-    <footer id="contact" className={styles.container}>
-      <div className={styles.text}>
+    <section id="contact" className={styles.container}>
+      <div className={styles.header}>
         <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
+        <a className={styles.share} href="/P_Akash_Resume.pdf" download aria-label="Download resume">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M12 4v10M8 10l4 4 4-4M5 19h14" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </a>
       </div>
       <ul className={styles.links}>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="https://akash.p02.dev@gmail.com">akash.p02.dev@gmail.com</a>
+        <li>
+          <img src={getImageUrl("contact/emailIcon.png")} alt="" />
+          <a href="mailto:akash.p02.dev@gmail.com">akash.p02.dev@gmail.com</a>
         </li>
-        <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/in/akash-p-762381325">linkedin.com/akash-p</a>
+        <li>
+          <span className={styles.pin}>☎</span>
+          <a href="tel:+916374142625">+91 6374142625</a>
         </li>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://github.com/Akash-develop">github.com/akash-p</a>
+        <li>
+          <span className={styles.pin}>📍</span>
+          Chennai, India
+        </li>
+        <li>
+          <img src={getImageUrl("contact/githubIcon.png")} alt="" />
+          <a href="https://github.com/Akash-develop" target="_blank" rel="noreferrer">
+            github.com/Akash-develop
+          </a>
+        </li>
+        <li>
+          <img src={getImageUrl("contact/linkedinIcon.png")} alt="" />
+          <a href="https://www.linkedin.com/in/akash-p-762381325" target="_blank" rel="noreferrer">
+            linkedin.com/in/akash-p
+          </a>
         </li>
       </ul>
-    </footer>
+    </section>
   );
 };
-
-
