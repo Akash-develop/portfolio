@@ -1,26 +1,16 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "AutoMicro-Bot",
+    "subtitle": "Personal Project",
+    "blurb": "A floating macOS desktop agent that controls apps, the browser, and multi-step flows in plain English.",
+    "imageSrc": "about/aboutImage.png",
+    "source": "https://github.com/Akash-develop/AutoMicro-Bot"
   },
   {
-    "title": "Project B",
+    "title": "EC2 Host Portfolio",
+    "subtitle": "Personal Project",
+    "blurb": "Self-hosted portfolio on AWS EC2 with S3, IAM, and Docker from weekend cloud practice.",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "source": "https://github.com/Akash-develop/EC2-host-portfolio"
   }
 ]

@@ -1,37 +1,25 @@
 import React from "react";
-
 import styles from "./ProjectCard.module.css";
-
+import { getImageUrl } from "../utils";
 
 export const ProjectCard = ({
-  project: { title,description, skills, demo, source },
+  project: { title, subtitle, blurb, source, imageSrc },
 }) => {
   return (
-    <div className={styles.container}>
-      {/* <img
-        src={}
-        alt={`Image of ${title}`}
-        className={styles.image}
-      /> */}
-      <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{description}</p>
-      <ul className={styles.skills}>
-        {skills.map((skill, id) => {
-          return (
-            <li key={id} className={styles.skill}>
-              {skill}
-            </li>
-          );
-        })}
-      </ul>
-      <div className={styles.links}>
-        <a href={demo} className={styles.link}>
-          Demo
-        </a>
-        <a href={source} className={styles.link}>
-          Source
-        </a>
+    <article className={styles.container}>
+      <img className={styles.image} src={getImageUrl(imageSrc)} alt="" />
+      <div>
+        <h3 className={styles.title}>
+          {title} <span>{subtitle}</span>
+        </h3>
+        <p className={styles.blurb}>{blurb}</p>
+        {source && (
+          <a href={source} target="_blank" rel="noreferrer">
+            <img src={getImageUrl("contact/githubIcon.png")} alt="" />
+            GitHub →
+          </a>
+        )}
       </div>
-    </div>
+    </article>
   );
 };

@@ -8,3 +8,34 @@
 html {
   scroll-behavior: smooth;
 }
+
+section {
+  scroll-margin-top: 18px;
+}
+
+html,
+body,
+#root {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
+  background: #07111f;
+  color: #e8f4ff;
+}
+
+img,
+canvas {
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+@media (max-width: 768px) {
+  section {
+    scroll-margin-top: 72px;
+  }
+}

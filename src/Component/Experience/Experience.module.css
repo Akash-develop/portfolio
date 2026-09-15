@@ -1,76 +1,94 @@
 @import "../../vars.css";
 
 .container {
-  color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding: 20px 22px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-card);
+  box-shadow: 0 12px 40px rgba(2, 8, 20, 0.25);
 }
 
 .title {
-  color: var(--color-text);
-  font-size: 35px;
+  font-size: 1.35rem;
   font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
-.content {
+.jobHeader {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.jobHeader img {
+  height: 36px;
+  width: auto;
+  max-width: 120px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px 8px;
+}
+
+.jobHeader h3 {
+  font-size: 1.05rem;
+  overflow-wrap: break-word;
+}
+
+.jobHeader p {
+  color: var(--color-muted);
+  margin-top: 4px;
+  font-size: 0.92rem;
+}
+
+.jobHeader span {
+  color: #93c5fd;
+}
+
+.project + .project {
   margin-top: 14px;
 }
 
-.skills {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
+.project h4 {
+  color: #93c5fd;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
 }
 
-.skill {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 11px;
-}
-
-.skillImageContainer {
-  background-color: var(--color-secondary);
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-}
-
-.skillImageContainer img {
-  width: 75px;
-}
-
-.skill p {
-  font-size: 25px;
-  font-family: var(--font-roboto);
+.project h4 span {
+  color: #cbd5e1;
   font-weight: 500;
 }
 
-@media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
+.project ul {
+  display: grid;
+  gap: 6px;
+  padding-left: 18px;
+  color: #d5e7f8;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 560px) {
+  .container {
+    padding: 16px;
   }
 
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+  .title {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
   }
 
-  .history {
-    width: 100%;
-    gap: 9px;
+  .jobHeader {
+    align-items: flex-start;
+  }
+
+  .jobHeader h3 {
+    font-size: 0.95rem;
+  }
+
+  .project ul {
+    font-size: 0.86rem;
   }
 }

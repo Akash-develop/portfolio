@@ -1,36 +1,42 @@
 import React from "react";
-
 import styles from "./Experience.module.css";
-import skills from "../../data/skills.json";
-const getImageUrl = (imageSrc) => {
-  
-  try {
-    return require(`../../assets/${imageSrc}`);
-  } catch (error) {
-    return ""; // Fallback in case of an error
-  }
-};
+import history from "../../data/history.json";
+import { getImageUrl } from "../utils";
 
 export const Experience = () => {
-
   return (
-    <section className={styles.container} id="Skills">
-      <h2 className={styles.title}>Skills</h2>
-      <div className={styles.content}>
-        <div className={styles.skills}>
-          {skills.map((skill, id) => {
-            return (
-              <div key={id} className={styles.skill}>
-                <div className={styles.skillImageContainer}>
-                <img src={getImageUrl(skill.imageSrc)} alt={skill.title} />
-                </div>
-                <p>{skill.title}</p>
-              </div>
-            );
-          })}
-        </div>
-   
-      </div>
+    <section className={styles.container} id="experience">
+      <h2 className={styles.title}>Experience</h2>
+      {history.map((item) => (
+        <article key={item.organisation} className={styles.job}>
+          <div className={styles.jobHeader}>
+            <img
+              src={getImageUrl(item.imageSrc)}
+              alt={`${item.organisation} logo`}
+            />
+            <div>
+              <h3>{item.role}</h3>
+              <p>
+                {item.organisation}
+                <span> | 4 Years</span>
+              </p>
+            </div>
+          </div>
+          {item.projects.map((project) => (
+            <div key={project.title} className={styles.project}>
+              <h4>
+                {project.title}
+                <span> | {project.subtitle}</span>
+              </h4>
+              <ul>
+                {project.description.slice(0, 3).map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </article>
+      ))}
     </section>
   );
 };
